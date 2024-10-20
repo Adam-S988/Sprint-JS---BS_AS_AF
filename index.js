@@ -44,14 +44,14 @@ app.get("/upcoming-movies", (request, response) => {
   response.render("upcomingMovies", { movies: upcomingMovie });
 });
 
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
-
 // random movie routing
 
 app.get("/random-movie", (request, response) => {
   const randomMovieId = selectRandomMovieId();
   response.redirect(`/movie/${randomMovieId}`);
+});
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });
