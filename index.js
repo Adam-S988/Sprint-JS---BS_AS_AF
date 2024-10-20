@@ -36,6 +36,13 @@ app.get("/top-rated", (request, response) => {
   response.render("top-rated", { movies: topMovies });
 });
 
+// Use the null rating from fictional movies to parse through the data. Considering movies that aren't out yet have a null rating, it's a reliable way to parse data for upcoming movies. - BS Oct 20
+
+app.get("/upcoming-movies", (request, response) => {
+  const upcomingMovie = Movies.filter((movie) => movie.rating === null);
+  response.render("upcoming-movies", { movies: upcomingMovie });
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
