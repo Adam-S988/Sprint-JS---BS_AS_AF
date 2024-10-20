@@ -15,7 +15,7 @@ const Genres = {
 const Movies = [
   {
     id: 1,
-    title: "The Godfather",
+    title: "The Godfather", // LOOK HOW THEY'VE MASSACRED MY BOY
     releaseYear: 1972,
     description:
       "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
@@ -25,7 +25,7 @@ const Movies = [
   },
   {
     id: 2,
-    title: "Inception",
+    title: "Inception", // YOU MUSTN'T BE AFRAID TO DREAM A LITTLE BIGGER DARLING
     releaseYear: 2010,
     description:
       "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.",
@@ -35,7 +35,7 @@ const Movies = [
   },
   {
     id: 3,
-    title: "The Dark Knight",
+    title: "The Dark Knight", // WANNA KNOW HOW I GOT THESE SCARS
     releaseYear: 2008,
     description:
       "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on Gotham.",
@@ -55,7 +55,7 @@ const Movies = [
   },
   {
     id: 5,
-    title: "Pulp Fiction",
+    title: "Pulp Fiction", // ENGLISH - DO YOU SPEAK IT
     releaseYear: 1994,
     description:
       "The lives of two mob hitmen, a boxer, and a pair of diner bandits intertwine in four tales of violence and redemption.",
@@ -65,7 +65,7 @@ const Movies = [
   },
   {
     id: 6,
-    title: "The Lord of the Rings: The Fellowship of the Ring",
+    title: "The Lord of the Rings: The Fellowship of the Ring", // HE THAT BREAKS A THING TO FIND OUT WHAT IT IS HAS LEFT THE PATH OF WISDOM
     releaseYear: 2001,
     description:
       "A meek Hobbit and eight companions set out on a journey to destroy a powerful ring.",
@@ -85,7 +85,7 @@ const Movies = [
   },
   {
     id: 8,
-    title: "Fight Club",
+    title: "Fight Club", // Brad Pitt wasn't real
     releaseYear: 1999,
     description:
       "An insomniac office worker forms an underground fight club that evolves into something more.",
@@ -95,7 +95,7 @@ const Movies = [
   },
   {
     id: 9,
-    title: "Interstellar",
+    title: "Interstellar", // I'LL COME BACK FOR YOU MURPH
     releaseYear: 2014,
     description:
       "A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.",
@@ -105,7 +105,7 @@ const Movies = [
   },
   {
     id: 10,
-    title: "Gladiator",
+    title: "Gladiator", // ARE YOU NOT ENTERTAINED
     releaseYear: 2000,
     description:
       "A former Roman general sets out to exact vengeance against the corrupt emperor who murdered his family.",
@@ -115,7 +115,7 @@ const Movies = [
   },
   {
     id: 11,
-    title: "The Matrix",
+    title: "The Matrix", // YOU HAVE TO LET IT ALL GO NEO - FEAR, DOUBT AND DISBELIEF. FREE YOUR MIND
     releaseYear: 1999,
     description:
       "A computer hacker learns from mysterious rebels about the true nature of his reality.",
@@ -125,7 +125,7 @@ const Movies = [
   },
   {
     id: 12,
-    title: "Saving Private Ryan",
+    title: "Saving Private Ryan", // WHEN WAS THE LAST TIME YOU FELT GOOD ABOUT ANYTHING
     releaseYear: 1998,
     description:
       "Following the Normandy landings, a group of soldiers goes behind enemy lines to retrieve a paratrooper.",
@@ -135,7 +135,7 @@ const Movies = [
   },
   {
     id: 13,
-    title: "The Shawshank Redemption",
+    title: "The Shawshank Redemption", // HOPE IS A DANGEROUS THING. HOPE CAN DRIVE A MAN INSANE
     releaseYear: 1994,
     description:
       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
@@ -145,7 +145,7 @@ const Movies = [
   },
   {
     id: 14,
-    title: "Parasite",
+    title: "Parasite", // THEY ARE NICE BECAUSE THEY ARE RICH
     releaseYear: 2019,
     description:
       "A poor family schemes to become employed by a wealthy family and infiltrate their household by posing as unrelated individuals.",
@@ -155,7 +155,7 @@ const Movies = [
   },
   {
     id: 15,
-    title: "Mad Max: Fury Road",
+    title: "Mad Max: Fury Road", // MY NAME IS MAX. MY WORLD IS FIRE AND BLOOD
     releaseYear: 2015,
     description:
       "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland.",
@@ -165,7 +165,7 @@ const Movies = [
   },
   {
     id: 16,
-    title: "The Lion King",
+    title: "The Lion King", // LION NOISES
     releaseYear: 1994,
     description:
       "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
@@ -175,7 +175,7 @@ const Movies = [
   },
   {
     id: 17,
-    title: "Avengers: Endgame",
+    title: "Avengers: Endgame", // AVENGERS, ASSEMBLE
     releaseYear: 2019,
     description:
       "After the devastating events of Infinity War, the Avengers assemble once more to undo Thanos' destruction.",
@@ -185,7 +185,7 @@ const Movies = [
   },
   {
     id: 18,
-    title: "Toy Story",
+    title: "Toy Story", // SNAP OUT OF IT BUZZZZZZZ
     releaseYear: 1995,
     description:
       "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
@@ -195,7 +195,7 @@ const Movies = [
   },
   {
     id: 19,
-    title: "Titanic",
+    title: "Titanic", // PAINT ME LIKE ONE OF YOUR FRENCH GIRLS
     releaseYear: 1997,
     description:
       "A young aristocrat falls in love with a kind but poor artist aboard the ill-fated R.M.S. Titanic.",
@@ -205,7 +205,7 @@ const Movies = [
   },
   {
     id: 20,
-    title: "Jurassic Park",
+    title: "Jurassic Park", // LIFE FINDS A WAY
     releaseYear: 1993,
     description:
       "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids.",
