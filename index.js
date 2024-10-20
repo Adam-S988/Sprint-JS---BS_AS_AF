@@ -31,6 +31,11 @@ app.get("/movie/:id", (request, response) => {
 
 //Add remaining routes here
 
+app.get("/top-rated", (request, response) => {
+  const topMovies = getTopRatedMovies(15);
+  response.render("top-rated", { movies: topMovies });
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
