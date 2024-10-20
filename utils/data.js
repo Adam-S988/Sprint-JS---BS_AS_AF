@@ -75,7 +75,7 @@ const Movies = [
   },
   {
     id: 7,
-    title: "Forrest Gump",
+    title: "Forrest Gump", // JENNNAAAYYYYYY
     releaseYear: 1994,
     description:
       "The presidencies of Kennedy and Johnson, the Vietnam War, and other historical events unfold from the perspective of an Alabama man.",
