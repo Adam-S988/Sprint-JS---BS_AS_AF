@@ -6,8 +6,7 @@ const {
   getMovieDetailsById,
   selectRandomMovieId,
 } = require("./utils/movieUtils");
-const { Movies, Genres } = require("./utils/data");
-const { request } = require("http");
+const { Movies } = require("./utils/data");
 
 const app = express();
 
@@ -15,40 +14,38 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));
 
-app.get("/", (request, response) => {
-  response.render("index");
+// Route to render the index page
+app.get("/", (req, res) => {
+  res.render("index"); // Render the index.ejs file
 });
 
-app.get("/movie/:id", (request, response) => {
-  //For use with links like: /movie/1
-  const movieId = request.params.id;
+// Route to render movie details
+app.get("/movie/:id", (req, res) => {
+  const movieId = req.params.id;
   const movie = getMovieDetailsById(movieId);
   if (movie) {
-    response.render("movies", { movie: movie });
+    res.render("movies", { movie: movie });
   } else {
-    response.status(404).send("Movie not found!");
+    res.status(404).send("Movie not found!");
   }
 });
 
-//Add remaining routes here
-
-app.get("/top-rated", (request, response) => {
+// Route to render top rated movies
+app.get("/top-rated", (req, res) => {
   const topMovies = getTopRatedMovies(15);
-  response.render("topMovies", { movies: topMovies });
+  res.render("topMovies", { movies: topMovies });
 });
 
-// Use the null rating from fictional movies to parse through the data. Considering movies that aren't out yet have a null rating, it's a reliable way to parse data for upcoming movies. - BS Oct 20
-
-app.get("/upcoming-movies", (request, response) => {
+// Route for upcoming movies
+app.get("/upcoming-movies", (req, res) => {
   const upcomingMovie = Movies.filter((movie) => movie.rating === null);
-  response.render("upcomingMovies", { movies: upcomingMovie });
+  res.render("upcomingMovies", { movies: upcomingMovie });
 });
 
-// random movie routing
-
-app.get("/random-movie", (request, response) => {
+// Route for random movie
+app.get("/random-movie", (req, res) => {
   const randomMovieId = selectRandomMovieId();
-  response.redirect(`/movie/${randomMovieId}`);
+  res.redirect(`/movie/${randomMovieId}`);
 });
 
 const port = 3000;

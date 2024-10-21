@@ -1,23 +1,53 @@
-/* Base styling, feel free to remove or alter */
-
 body {
-    background: linear-gradient(90deg, rgba(93,142,251,1) 0%, rgba(93,142,251,1) 50%, rgba(0,212,255,1) 100%);
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    color: #F6F6F6;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 142, 251, 1) 0%,
+    rgba(93, 142, 251, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+nav {
+  text-align: center;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: goldenrod;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
+  padding: 20px;
 }
 
-.main-content h1 {
-    font-size: 50px;
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
