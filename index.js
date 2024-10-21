@@ -7,6 +7,7 @@ const {
   selectRandomMovieId,
 } = require("./utils/movieUtils");
 const { Movies } = require("./utils/data");
+const { getRandomMovies } = require("./utils/movieUtils");
 
 const app = express();
 
@@ -16,7 +17,8 @@ app.use(express.static("public"));
 
 // Route to render the index page
 app.get("/", (req, res) => {
-  res.render("index"); // Render the index.ejs file
+  const randomMovies = getRandomMovies(9);
+  res.render("index", { movies: randomMovies }); // Render the index.ejs file
 });
 
 // Route to render movie details
