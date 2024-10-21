@@ -22,6 +22,7 @@ const Movies = [
     director: "Francis Ford Coppola",
     rating: 9.2,
     genre: Genres.CRIME,
+    thumbnail: "https://ibb.co/Rbgy34j",
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 8.8,
     genre: Genres.SCI_FI,
+    thumbnail: "https://ibb.co/kxfJ9ZR",
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 9.0,
     genre: Genres.ACTION,
+    thumbnail: "https://ibb.co/XjWFbvd",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 9.0,
     genre: Genres.DRAMA,
+    thumbnail: "https://ibb.co/mTSrbLr",
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ const Movies = [
     director: "Quentin Tarantino",
     rating: 8.9,
     genre: Genres.CRIME,
+    thumbnail: "https://ibb.co/7WbJRhF",
   },
   {
     id: 6,
@@ -72,6 +77,7 @@ const Movies = [
     director: "Peter Jackson",
     rating: 8.8,
     genre: Genres.FANTASY,
+    thumbnail: "https://ibb.co/5BvWz1x",
   },
   {
     id: 7,
@@ -82,6 +88,7 @@ const Movies = [
     director: "Robert Zemeckis",
     rating: 8.8,
     genre: Genres.DRAMA,
+    thumbnail: "https://ibb.co/pWfSD32",
   },
   {
     id: 8,
@@ -92,6 +99,7 @@ const Movies = [
     director: "David Fincher",
     rating: 8.8,
     genre: Genres.DRAMA,
+    thumbnail: "https://ibb.co/D7b5VFj",
   },
   {
     id: 9,
@@ -102,6 +110,7 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 8.6,
     genre: Genres.SCI_FI,
+    thumbnail: "https://ibb.co/WcsqMZQ",
   },
   {
     id: 10,
@@ -112,6 +121,7 @@ const Movies = [
     director: "Ridley Scott",
     rating: 8.5,
     genre: Genres.ACTION,
+    thumbnail: "https://ibb.co/vVKhdkF",
   },
   {
     id: 11,
@@ -122,6 +132,7 @@ const Movies = [
     director: "Lana Wachowski, Lilly Wachowski",
     rating: 8.7,
     genre: Genres.SCI_FI,
+    thumbnail: "https://ibb.co/7gxfBWy",
   },
   {
     id: 12,
@@ -132,6 +143,7 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 8.6,
     genre: Genres.WAR,
+    thumbnail: "https://ibb.co/MsT9dKR",
   },
   {
     id: 13,
@@ -142,6 +154,7 @@ const Movies = [
     director: "Frank Darabont",
     rating: 9.3,
     genre: Genres.DRAMA,
+    thumbnail: "https://ibb.co/THf4dV9",
   },
   {
     id: 14,
@@ -152,6 +165,7 @@ const Movies = [
     director: "Bong Joon Ho",
     rating: 8.6,
     genre: Genres.THRILLER,
+    thumbnail: "https://ibb.co/XtsG9c9",
   },
   {
     id: 15,
@@ -162,6 +176,7 @@ const Movies = [
     director: "George Miller",
     rating: 8.1,
     genre: Genres.ACTION,
+    thumbnail: "https://ibb.co/rsntgQR",
   },
   {
     id: 16,
@@ -172,6 +187,7 @@ const Movies = [
     director: "Roger Allers, Rob Minkoff",
     rating: 8.5,
     genre: Genres.ANIMATION,
+    thumbnail: "https://ibb.co/vZ02LCQ",
   },
   {
     id: 17,
@@ -182,6 +198,7 @@ const Movies = [
     director: "Anthony Russo, Joe Russo",
     rating: 8.4,
     genre: Genres.ACTION,
+    thumbnail: "https://ibb.co/PQKwYYK",
   },
   {
     id: 18,
@@ -192,6 +209,7 @@ const Movies = [
     director: "John Lasseter",
     rating: 8.3,
     genre: Genres.ANIMATION,
+    thumbnail: "https://ibb.co/8jQcq3s",
   },
   {
     id: 19,
@@ -202,6 +220,7 @@ const Movies = [
     director: "James Cameron",
     rating: 7.9,
     genre: Genres.ROMANCE,
+    thumbnail: "https://ibb.co/NyzRzCS",
   },
   {
     id: 20,
@@ -212,6 +231,7 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 8.1,
     genre: Genres.ADVENTURE,
+    thumbnail: "https://ibb.co/CBXq6Cw",
   },
 
   // Fictional unreleased movies
