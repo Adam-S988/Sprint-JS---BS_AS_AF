@@ -22,6 +22,8 @@ const Movies = [
     director: "Francis Ford Coppola",
     rating: 9.2,
     genre: Genres.CRIME,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/The_Godfather_jbvenm.jpg",
   },
   {
     id: 2,
@@ -32,6 +34,8 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 8.8,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Inception_t8blpf.jpg",
   },
   {
     id: 3,
@@ -42,6 +46,8 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 9.0,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/The_Dark_Knight_uldplg.jpg",
   },
   {
     id: 4,
@@ -52,6 +58,8 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 9.0,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Schindlers_list_hrjmeh.jpg",
   },
   {
     id: 5,
@@ -62,6 +70,8 @@ const Movies = [
     director: "Quentin Tarantino",
     rating: 8.9,
     genre: Genres.CRIME,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Pulp_Fiction_hc5x3c.jpg",
   },
   {
     id: 6,
@@ -72,6 +82,8 @@ const Movies = [
     director: "Peter Jackson",
     rating: 8.8,
     genre: Genres.FANTASY,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550952/LOTR_fellowship_vxcu9x.jpg",
   },
   {
     id: 7,
@@ -82,6 +94,8 @@ const Movies = [
     director: "Robert Zemeckis",
     rating: 8.8,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Forrest_Gump_om99bu.jpg",
   },
   {
     id: 8,
@@ -92,6 +106,8 @@ const Movies = [
     director: "David Fincher",
     rating: 8.8,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Fight_Club_vupkt4.jpg",
   },
   {
     id: 9,
@@ -102,6 +118,8 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 8.6,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550952/Interstellar_ndnt1h.jpg",
   },
   {
     id: 10,
@@ -112,6 +130,8 @@ const Movies = [
     director: "Ridley Scott",
     rating: 8.5,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Gladiator_mjphhf.jpg",
   },
   {
     id: 11,
@@ -122,6 +142,8 @@ const Movies = [
     director: "Lana Wachowski, Lilly Wachowski",
     rating: 8.7,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/The_Matrix_fqe1ha.jpg",
   },
   {
     id: 12,
@@ -132,6 +154,8 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 8.6,
     genre: Genres.WAR,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Saving_Private_Ryan_f0iamr.jpg",
   },
   {
     id: 13,
@@ -142,6 +166,8 @@ const Movies = [
     director: "Frank Darabont",
     rating: 9.3,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Shawshank_Redemption_vndtcc.jpg",
   },
   {
     id: 14,
@@ -152,6 +178,8 @@ const Movies = [
     director: "Bong Joon Ho",
     rating: 8.6,
     genre: Genres.THRILLER,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550952/Parasite_qt0nkz.jpg",
   },
   {
     id: 15,
@@ -162,6 +190,8 @@ const Movies = [
     director: "George Miller",
     rating: 8.1,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550952/Mad_Max_Fury_Road_d8nltb.jpg",
   },
   {
     id: 16,
@@ -172,6 +202,8 @@ const Movies = [
     director: "Roger Allers, Rob Minkoff",
     rating: 8.5,
     genre: Genres.ANIMATION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550952/The_Lion_King_zf4pt7.jpg",
   },
   {
     id: 17,
@@ -182,6 +214,8 @@ const Movies = [
     director: "Anthony Russo, Joe Russo",
     rating: 8.4,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Avengers_Endgame_mwlfyq.jpg",
   },
   {
     id: 18,
@@ -192,6 +226,8 @@ const Movies = [
     director: "John Lasseter",
     rating: 8.3,
     genre: Genres.ANIMATION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/Toy_Story_vcghpj.jpg",
   },
   {
     id: 19,
@@ -202,6 +238,8 @@ const Movies = [
     director: "James Cameron",
     rating: 7.9,
     genre: Genres.ROMANCE,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Titanic_dynzh7.jpg",
   },
   {
     id: 20,
@@ -212,6 +250,8 @@ const Movies = [
     director: "Steven Spielberg",
     rating: 8.1,
     genre: Genres.ADVENTURE,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550955/Jurassic_Park_jwho4b.jpg",
   },
 
   // Fictional unreleased movies
