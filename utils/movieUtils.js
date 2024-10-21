@@ -7,7 +7,10 @@ const { Movies, Genres } = require("./data");
  * @returns {Array.<Movies>} - An array of movies matching the genre
  */
 function getMoviesByGenre(genre, x) {
-    // Implementation here
+    // Filter movies by genre
+    const moviesByGenre = Movies.filter(movie => movie.genre.includes(genre));
+    // Return result "x" movies
+    return moviesByGenre.slice(0, x);
 }
 
 /**
@@ -16,7 +19,15 @@ function getMoviesByGenre(genre, x) {
  * @returns {Array.<Movies>} - An array of top-rated movies
  */
 function getTopRatedMovies(x) {
-    // Implementation here
+    // Sort Movies in descending order by rating by comparing two movies at a time in array
+    Movies.sort((movie1, movie2) => {
+        // Compare ratings and put the movie with higher rating before the other
+        return movie2.rating - movie1.rating;
+    });
+    // Get the top "x" movies from the sorted array
+    const topRatedMovies = Movies.slice(0, x);
+    // Return array of the top-rated movies
+    return topRatedMovies;
 }
 
 /**
@@ -25,7 +36,16 @@ function getTopRatedMovies(x) {
  * @returns {Movies} - The movie object
  */
 function getMovieDetailsById(id) {
-    // Implementation here
+    // Use the find method to search the Movies array for a movie object with a matching ID
+    const movie = Movies.find(movie => movie.id === id);
+    // Check if the movie was found
+    if (movie) {
+        // Return movie if found
+        return movie;
+    } else {
+        // else return a message "not found"
+        return "Movie not found";
+    }
 }
 
 /**
@@ -33,7 +53,11 @@ function getMovieDetailsById(id) {
  * @returns {number} - A random movie ID
  */
 function selectRandomMovieId() {
-    // Implementation here
+    // Generate a random index between 0 and the last index of the Movies array using Math.Random
+    // Use Math.floor to round to nearest whole number returning a valid index number
+    const randomIndex = Math.floor(Math.random() * Movies.length);
+    // Return the ID of the movie that was randomly selected
+    return Movies[randomIndex].id;
 }
 
 // Export the functions to be used in other modules
