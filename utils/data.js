@@ -9,13 +9,13 @@ const Genres = {
   ROMANCE: "Romance",
   SCI_FI: "Sci-Fi",
   THRILLER: "Thriller",
-  WAR: "War",
+  WAR: "War", // What is it good for? Absolutely Nothing!
 };
 
 const Movies = [
   {
     id: 1,
-    title: "The Godfather", // LOOK HOW THEY'VE MASSACRED MY BOY
+    title: "The Godfather", // LOOK HOW THEY'VE MASSACRED MY BOY // Say Hello to my little friend!
     releaseYear: 1972,
     description:
       "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
@@ -35,7 +35,7 @@ const Movies = [
   },
   {
     id: 3,
-    title: "The Dark Knight", // WANNA KNOW HOW I GOT THESE SCARS
+    title: "The Dark Knight", // WANNA KNOW HOW I GOT THESE SCARS // I AM THE BAT
     releaseYear: 2008,
     description:
       "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on Gotham.",
@@ -47,7 +47,7 @@ const Movies = [
     id: 4,
     title: "Schindler's List",
     releaseYear: 1993,
-    description:
+    description: // Whoever saves one life, saves the world entire 
       "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce.",
     director: "Steven Spielberg",
     rating: 9.0,
@@ -55,7 +55,7 @@ const Movies = [
   },
   {
     id: 5,
-    title: "Pulp Fiction", // ENGLISH - DO YOU SPEAK IT
+    title: "Pulp Fiction", // ENGLISH - DO YOU SPEAK IT  // In Paris, they call it a 'Royale with Cheese' 
     releaseYear: 1994,
     description:
       "The lives of two mob hitmen, a boxer, and a pair of diner bandits intertwine in four tales of violence and redemption.",
@@ -67,7 +67,7 @@ const Movies = [
     id: 6,
     title: "The Lord of the Rings: The Fellowship of the Ring", // HE THAT BREAKS A THING TO FIND OUT WHAT IT IS HAS LEFT THE PATH OF WISDOM
     releaseYear: 2001,
-    description:
+    description: // All we have to decide is what to do with the time that is given us
       "A meek Hobbit and eight companions set out on a journey to destroy a powerful ring.",
     director: "Peter Jackson",
     rating: 8.8,
@@ -75,7 +75,7 @@ const Movies = [
   },
   {
     id: 7,
-    title: "Forrest Gump", // JENNNAAAYYYYYY
+    title: "Forrest Gump", // JENNNAAAYYYYYY // Life is like a box of chocolates...
     releaseYear: 1994,
     description:
       "The presidencies of Kennedy and Johnson, the Vietnam War, and other historical events unfold from the perspective of an Alabama man.",
@@ -85,7 +85,7 @@ const Movies = [
   },
   {
     id: 8,
-    title: "Fight Club", // Brad Pitt wasn't real
+    title: "Fight Club", // Brad Pitt wasn't real // Rule # 1 - We don't talk about Fight Club
     releaseYear: 1999,
     description:
       "An insomniac office worker forms an underground fight club that evolves into something more.",
@@ -165,7 +165,7 @@ const Movies = [
   },
   {
     id: 16,
-    title: "The Lion King", // LION NOISES
+    title: "The Lion King", // LION NOISES  // Hakuna Matata!
     releaseYear: 1994,
     description:
       "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
@@ -205,7 +205,7 @@ const Movies = [
   },
   {
     id: 20,
-    title: "Jurassic Park", // LIFE FINDS A WAY
+    title: "Jurassic Park", // LIFE FINDS A WAY 
     releaseYear: 1993,
     description:
       "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids.",
