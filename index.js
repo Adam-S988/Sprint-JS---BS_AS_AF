@@ -50,6 +50,12 @@ app.get("/random-movie", (req, res) => {
   res.redirect(`/movie/${randomMovieId}`);
 });
 
+// generate new movie button
+app.get("/generate-random-movies", (req, res) => {
+  const randomMovies = getRandomMovies(9);
+  res.render("index", { movies: randomMovies });
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
