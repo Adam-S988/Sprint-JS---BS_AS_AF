@@ -38,6 +38,7 @@ function getTopRatedMovies(x) {
 function getMovieDetailsById(id) {
   // Use the find method to search the Movies array for a movie object with a matching ID
   const movie = Movies.find((movie) => movie.id === id);
+  console.log(movie);
   // Check if the movie was found
   if (movie) {
     // Return movie if found

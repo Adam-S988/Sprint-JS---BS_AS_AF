@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 // Route to render movie details
 app.get("/movie/:id", (req, res) => {
-  const movieId = req.params.id;
+  const movieId = Number(req.params.id);
   const movie = getMovieDetailsById(movieId);
   if (movie) {
     res.render("movies", { movie: movie });
