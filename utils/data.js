@@ -335,6 +335,132 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
   },
+  {
+    id: 29,
+    title: "Codebreaker 2",
+    releaseYear: 2025,
+    description:
+      "A talented hacker gets caught in a web of espionage that could change the world...Again",
+    director: "John Doe",
+    rating: null,
+    genre: Genres.ACTION,
+  },
+
+  {
+    id: 30,
+    title: "Dune Awakening",
+    releaseYear: 2027,
+    description:
+      "Picking up after the events of Dune Part 2, We follow Paul Atreides as he has his final showdown with the Harkonnen.",
+    director: "Denis Vileneueve",
+    rating: null,
+    genre: Genres.SCI_FI,
+  },
+
+  {
+    id: 31,
+    title: "Avengers Doomsday",
+    releaseYear: 2026,
+    description:
+      "Picking up long after Avengers Endgame, the team has to assemble once again to face off against Doctor Doom",
+    director: "Joe & Anthony Russo",
+    rating: null,
+    genre: Genres.FANTASY,
+  },
+
+  {
+    id: 32,
+    title: "Avengers Secret Wars",
+    releaseYear: 2027,
+    description: "Unconfirmed synoposis at this time",
+    director: "Joe & Anthony Russo",
+    rating: null,
+    genre: Genres.FANTASY,
+  },
+
+  {
+    id: 33,
+    title: "I Am Legend 2",
+    releaseYear: 2026,
+    description:
+      "Robert Neville continues to try and find his place in the post apocalyptic world",
+    director: "Francis Lawrence",
+    rating: null,
+    genre: Genres.SCI_FI,
+  },
+
+  {
+    id: 34,
+    title: "Spring",
+    releaseYear: 2027,
+    description:
+      "A group of local college teens head to a spring resort and stumble upon an unresolved crime scene.",
+    director: "Quentin Tarantino",
+    rating: null,
+    genre: Genres.DRAMA,
+  },
+
+  {
+    id: 35,
+    title: "Kill Bill Volume 3",
+    releaseYear: 2028,
+    description: "The Bride returns",
+    director: "Quentin Tarantino",
+    rating: null,
+    genre: Genres.ACTION,
+  },
+
+  {
+    id: 36,
+    title: "The Resurrection of Zachary Wheeler",
+    releaseYear: 2025,
+    description:
+      "Resurrected a 100 years after his untimely death, Zachary Wheeler has to find his place in the new world.",
+    director: "Bill Hader",
+    rating: null,
+    genre: Genres.DRAMA,
+  },
+
+  {
+    id: 37,
+    title: "Dear to my Heart",
+    releaseYear: 2026,
+    description:
+      "From the director of Toy Story: An uplifting tale of honor and frienship.",
+    director: "John Lasseter",
+    rating: null,
+    genre: Genres.ANIMATION,
+  },
+
+  {
+    id: 38,
+    title: "Dear to my Heart 2",
+    releaseYear: 2027,
+    description: "Description not yet available.",
+    director: "John Lasseter",
+    rating: null,
+    genre: Genres.ANIMATION,
+  },
+
+  {
+    id: 39,
+    title: "American Nightmare",
+    releaseYear: 2026,
+    description: "America isn't what it seems.",
+    director: "Ari Aster",
+    rating: null,
+    genre: Genres.HORROR,
+  },
+
+  {
+    id: 40,
+    title: "Nosferatu part 2",
+    releaseYear: 2025,
+    description: "A direct sequel to the 2024 smash hit Nosferatu.",
+    director: "Robert Eggers",
+    rating: null,
+    genre: Genres.HORROR,
+  },
 ];
 
 module.exports = {
