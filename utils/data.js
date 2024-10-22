@@ -264,6 +264,8 @@ const Movies = [
     director: "Emily Summers",
     rating: null,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 22,
@@ -274,6 +276,8 @@ const Movies = [
     director: "James Harker",
     rating: null,
     genre: Genres.THRILLER,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 23,
@@ -284,6 +288,8 @@ const Movies = [
     director: "Isabella Cruz",
     rating: null,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 24,
@@ -294,6 +300,8 @@ const Movies = [
     director: "Cameron Gray",
     rating: null,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 25,
@@ -304,6 +312,8 @@ const Movies = [
     director: "Lara Stone",
     rating: null,
     genre: Genres.ADVENTURE,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 26,
@@ -314,6 +324,8 @@ const Movies = [
     director: "Michael Liu",
     rating: null,
     genre: Genres.CRIME,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 27,
@@ -324,6 +336,8 @@ const Movies = [
     director: "Sarah White",
     rating: null,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 28,
@@ -334,6 +348,8 @@ const Movies = [
     director: "John Doe",
     rating: null,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
     id: 29,
@@ -344,6 +360,8 @@ const Movies = [
     director: "John Doe",
     rating: null,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -355,6 +373,8 @@ const Movies = [
     director: "Denis Vileneueve",
     rating: null,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -366,6 +386,8 @@ const Movies = [
     director: "Joe & Anthony Russo",
     rating: null,
     genre: Genres.FANTASY,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -376,6 +398,8 @@ const Movies = [
     director: "Joe & Anthony Russo",
     rating: null,
     genre: Genres.FANTASY,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -387,6 +411,8 @@ const Movies = [
     director: "Francis Lawrence",
     rating: null,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -398,6 +424,8 @@ const Movies = [
     director: "Quentin Tarantino",
     rating: null,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -408,6 +436,8 @@ const Movies = [
     director: "Quentin Tarantino",
     rating: null,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -419,6 +449,8 @@ const Movies = [
     director: "Bill Hader",
     rating: null,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -430,6 +462,8 @@ const Movies = [
     director: "John Lasseter",
     rating: null,
     genre: Genres.ANIMATION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -440,6 +474,8 @@ const Movies = [
     director: "John Lasseter",
     rating: null,
     genre: Genres.ANIMATION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -450,6 +486,8 @@ const Movies = [
     director: "Ari Aster",
     rating: null,
     genre: Genres.HORROR,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 
   {
@@ -460,6 +498,8 @@ const Movies = [
     director: "Robert Eggers",
     rating: null,
     genre: Genres.HORROR,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
 ];
 
