@@ -56,6 +56,14 @@ app.get("/generate-random-movies", (req, res) => {
   res.render("index", { movies: randomMovies });
 });
 
+// generate fictional movies button
+app.get("/generate-fictional-movies", (req, res) => {
+  const upcomingMovies = Movies.filter((movie) => movie.rating === null);
+  const shuffledUpcomingMovies = upcomingMovies.sort(() => 0.5 - Math.random());
+  const limitedUpcomingMovies = shuffledUpcomingMovies.slice(0, 9);
+  res.render("index", { movies: limitedUpcomingMovies });
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
