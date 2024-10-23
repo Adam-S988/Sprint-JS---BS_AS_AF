@@ -69,6 +69,14 @@ function getRandomMovies(num = 9) {
   return shuffledMovies.slice(0, num);
 }
 
+// get 9 random unreleased movies
+
+function getUnreleasedMovies(num = 9) {
+  const filteredMovies = Movies.filter((movie) => movie.rating === null); // RETURN FICTIONAL MOVIES ON UPCOMING
+  const shuffledMovies = filteredMovies.sort(() => 0.5 - Math.random());
+  return shuffledMovies.slice(0, num);
+}
+
 // Export the functions to be used in other modules
 module.exports = {
   getMoviesByGenre,
@@ -76,4 +84,5 @@ module.exports = {
   getMovieDetailsById,
   selectRandomMovieId,
   getRandomMovies,
+  getUnreleasedMovies,
 };

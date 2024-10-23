@@ -40,8 +40,17 @@ app.get("/top-rated", (req, res) => {
 
 // Route for upcoming movies (fictional movies are parsed out through the null filter.)
 app.get("/upcoming-movies", (req, res) => {
-  const upcomingMovie = Movies.filter((movie) => movie.rating === null);
-  res.render("upcomingMovies", { movies: upcomingMovie });
+  const upcomingMovies = Movies.filter((movie) => movie.rating === null);
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+  const randomUpcomingMovies = shuffleArray(upcomingMovies).slice(0, 9);
+
+  res.render("upcomingMovies", { movies: randomUpcomingMovies });
 });
 
 // Route for random movie
