@@ -386,7 +386,7 @@ const Movies = [
 
   // Fictional unreleased movies
   {
-    id: 21,
+    id: 31,
     title: "Mars Uprising",
     releaseYear: 2025,
     description:
@@ -398,7 +398,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 22,
+    id: 32,
     title: "The Last Astronaut",
     releaseYear: 2024,
     description:
@@ -410,7 +410,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 23,
+    id: 33,
     title: "Quantum Paradox",
     releaseYear: 2026,
     description:
@@ -422,7 +422,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 24,
+    id: 34,
     title: "Echoes of Tomorrow",
     releaseYear: 2027,
     description:
@@ -434,7 +434,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 25,
+    id: 35,
     title: "The Forgotten Island",
     releaseYear: 2025,
     description:
@@ -446,7 +446,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 26,
+    id: 36,
     title: "Nightfall City",
     releaseYear: 2025,
     description:
@@ -458,7 +458,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 27,
+    id: 37,
     title: "Lunar Colony",
     releaseYear: 2026,
     description:
@@ -470,7 +470,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 28,
+    id: 38,
     title: "Codebreaker",
     releaseYear: 2024,
     description:
@@ -482,7 +482,7 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
   {
-    id: 29,
+    id: 39,
     title: "Codebreaker 2",
     releaseYear: 2025,
     description:
@@ -495,7 +495,7 @@ const Movies = [
   },
 
   {
-    id: 30,
+    id: 40,
     title: "Dune Awakening",
     releaseYear: 2027,
     description:
@@ -508,7 +508,7 @@ const Movies = [
   },
 
   {
-    id: 31,
+    id: 41,
     title: "Avengers Doomsday",
     releaseYear: 2026,
     description:
@@ -521,7 +521,7 @@ const Movies = [
   },
 
   {
-    id: 32,
+    id: 42,
     title: "Avengers Secret Wars",
     releaseYear: 2027,
     description: "Unconfirmed synoposis at this time",
@@ -533,7 +533,7 @@ const Movies = [
   },
 
   {
-    id: 33,
+    id: 43,
     title: "I Am Legend 2",
     releaseYear: 2026,
     description:
@@ -546,7 +546,7 @@ const Movies = [
   },
 
   {
-    id: 34,
+    id: 44,
     title: "Spring",
     releaseYear: 2027,
     description:
@@ -559,7 +559,7 @@ const Movies = [
   },
 
   {
-    id: 35,
+    id: 45,
     title: "Kill Bill Volume 3",
     releaseYear: 2028,
     description: "The Bride returns",
@@ -571,7 +571,7 @@ const Movies = [
   },
 
   {
-    id: 36,
+    id: 46,
     title: "The Resurrection of Zachary Wheeler",
     releaseYear: 2025,
     description:
@@ -584,7 +584,7 @@ const Movies = [
   },
 
   {
-    id: 37,
+    id: 47,
     title: "Dear to my Heart",
     releaseYear: 2026,
     description:
@@ -597,7 +597,7 @@ const Movies = [
   },
 
   {
-    id: 38,
+    id: 48,
     title: "Dear to my Heart 2",
     releaseYear: 2027,
     description: "Description not yet available.",
@@ -609,7 +609,7 @@ const Movies = [
   },
 
   {
-    id: 39,
+    id: 49,
     title: "American Nightmare",
     releaseYear: 2026,
     description: "America isn't what it seems.",
@@ -621,7 +621,7 @@ const Movies = [
   },
 
   {
-    id: 40,
+    id: 50,
     title: "Nosferatu part 2",
     releaseYear: 2025,
     description: "A direct sequel to the 2024 smash hit Nosferatu.",

@@ -25,7 +25,7 @@ function getTopRatedMovies(x) {
     return movie2.rating - movie1.rating;
   });
   // Get the top "x" movies from the sorted array
-  const topRatedMovies = Movies.slice(0, 15);
+  const topRatedMovies = Movies.slice(0, 30);
   // Return array of the top-rated movies
   return topRatedMovies;
 }
