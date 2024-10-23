@@ -337,7 +337,7 @@ const Movies = [
     title: "Goodfellas", // AS FAR BACK AS I CAN REMEMBER, I ALWAYS WANTED TO BE A GANGSTER
     releaseYear: 1990,
     description:
-      "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "The story of Henry Hill's life in the mob, focusing on his relationship with his wife and partners in the Italian-American crime syndicate.",
     director: "Martin Scorsese",
     rating: 8.7,
     genre: Genres.CRIME,
@@ -376,7 +376,7 @@ const Movies = [
     title: "The Social Network", // YOU DON’T GET TO 500 MILLION FRIENDS WITHOUT MAKING A FEW ENEMIES
     releaseYear: 2010,
     description:
-      "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
+      "Harvard student Mark Zuckerberg creates Facebook while facing lawsuits from the twins who claim he stole their idea, and a co-founder who was squeezed out.",
     director: "David Fincher",
     rating: 7.8,
     genre: Genres.DRAMA,
