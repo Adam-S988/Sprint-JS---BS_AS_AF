@@ -25,7 +25,7 @@ function getTopRatedMovies(x) {
     return movie2.rating - movie1.rating;
   });
   // Get the top "x" movies from the sorted array
-  const topRatedMovies = Movies.slice(0, x);
+  const topRatedMovies = Movies.slice(0, 15);
   // Return array of the top-rated movies
   return topRatedMovies;
 }
@@ -71,7 +71,7 @@ function getRandomMovies(num = 9) {
 
 // get 9 random unreleased movies
 
-function getUnreleasedMovies(num = 9) {
+function getUnreleasedMovies(num = 5) {
   const filteredMovies = Movies.filter((movie) => movie.rating === null); // RETURN FICTIONAL MOVIES ON UPCOMING
   const shuffledMovies = filteredMovies.sort(() => 0.5 - Math.random());
   return shuffledMovies.slice(0, num);

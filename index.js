@@ -48,7 +48,7 @@ app.get("/upcoming-movies", (req, res) => {
     }
     return array;
   };
-  const randomUpcomingMovies = shuffleArray(upcomingMovies).slice(0, 9);
+  const randomUpcomingMovies = shuffleArray(upcomingMovies).slice(0, 5);
 
   res.render("upcomingMovies", { movies: randomUpcomingMovies });
 });
