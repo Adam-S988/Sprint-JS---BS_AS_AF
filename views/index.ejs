@@ -7,7 +7,44 @@
   <body>
     <%- include('header') %>
     <main class="main-content">
-      <h2>Welcome to the Movie Gallery</h2>
+      <h1>Welcome to the Movie Gallery</h1>
+      <div class="outerMovieBox">
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+        <div class="movieCard"></div>
+      </div>
+
+      <div class="releasedMovieButton">
+        <button>
+          <label for="releasedMovie">Generate more movies!</label>
+          <!-- Will regenerate main movie box to display 9 new movies-->
+        </button>
+      </div>
+
+      <div class="fictionalMovieButton">
+        <button>
+          <label for="fictionalMovie">Generate fictional movies!</label>
+          <!-- Will generate 9 fictional movies. (Anything with null rating qualifies as fictional movie)
+          
+          NOTE: FICTIONAL MOVIE MEANS NOT A REAL MOVIE IN REAL LIFE. NOT FICTIONAL AS IN GENRE.
+          
+          -->
+        </button>
+      </div>
     </main>
   </body>
 </html>
+
+<!-- General idea (based off sprint docs)
+      - Home page consisting of 9 random movies (probably in their own div cards)
+      - each movie should display their: title, release year, rating (out of 10)
+      - clicking on movie will bring you to it's page
+      -considering we are using ratings, we won't pull fictional movies on home page. 
+          Maybe can have a separate button on home page to "Load fictional movie"
+-->

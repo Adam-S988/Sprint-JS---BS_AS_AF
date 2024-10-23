@@ -36,7 +36,7 @@ app.get("/top-rated", (req, res) => {
   res.render("topMovies", { movies: topMovies });
 });
 
-// Route for upcoming movies
+// Route for upcoming movies (fictional movies are parsed out through the null filter.)
 app.get("/upcoming-movies", (req, res) => {
   const upcomingMovie = Movies.filter((movie) => movie.rating === null);
   res.render("upcomingMovies", { movies: upcomingMovie });

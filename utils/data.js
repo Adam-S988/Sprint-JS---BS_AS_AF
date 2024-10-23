@@ -295,17 +295,6 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
   },
-
-  {
-    id: 29,
-    title: "Codebreaker 2",
-    releaseYear: 2026,
-    description:
-      "A talented hacker gets caught in a web of espionage that could change the world.",
-    director: "John Doe",
-    rating: null,
-    genre: Genres.ACTION,
-  },
 ];
 
 module.exports = {
