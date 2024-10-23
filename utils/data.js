@@ -24,6 +24,11 @@ const Movies = [
     genre: Genres.CRIME,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/The_Godfather_jbvenm.jpg",
+    extendedInfo: {
+      longDescription:
+        "A powerful and timeless exploration of crime, family, and power, The Godfather follows the transformation of Michael Corleone from reluctant outsider to ruthless mafia boss, in an epic tale of loyalty and betrayal.",
+      starring: ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton"],
+    },
   },
   {
     id: 2,
@@ -36,6 +41,11 @@ const Movies = [
     genre: Genres.SCI_FI,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Inception_t8blpf.jpg",
+    extendedInfo: {
+      longDescription:
+        "A visually stunning, mind-bending thriller where a team of thieves infiltrates dreams to plant an idea in a target's mind. A tale of dreams within dreams that explores the boundaries of reality and consciousness.",
+      starring: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+    },
   },
   {
     id: 3,
@@ -48,6 +58,11 @@ const Movies = [
     genre: Genres.ACTION,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550954/The_Dark_Knight_uldplg.jpg",
+    extendedInfo: {
+      longDescription:
+        "A gritty and intense take on the Batman saga, The Dark Knight delves deep into the battle between Batman and the anarchic Joker, blurring the lines between heroism and villainy.",
+      starring: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+    },
   },
   {
     id: 4,
@@ -60,6 +75,11 @@ const Movies = [
     genre: Genres.DRAMA,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550953/Schindlers_list_hrjmeh.jpg",
+    extendedInfo: {
+      longDescription:
+        "A haunting and moving portrayal of the Holocaust, Schindler's List tells the true story of Oskar Schindler, a German businessman who saved over a thousand Jews from Nazi persecution by employing them in his factories.",
+      starring: ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
+    },
   },
   {
     id: 5,
