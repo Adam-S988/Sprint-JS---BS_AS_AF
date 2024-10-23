@@ -263,6 +263,8 @@ const Movies = [
     director: "Jonathan Demme",
     rating: 8.6,
     genre: Genres.THRILLER,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703287/The_Silence_of_the_Lambs_pebih8.jpg",
   },
 
   {
@@ -274,6 +276,8 @@ const Movies = [
     director: "Frank Darabont",
     rating: 8.6,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703288/The_Green_Mile_jvyrhd.jpg",
   },
 
   {
@@ -285,6 +289,8 @@ const Movies = [
     director: "Christopher Nolan",
     rating: 8.5,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703288/The_Prestige_tttcgn.jpg",
   },
 
   {
@@ -296,6 +302,8 @@ const Movies = [
     director: "Mel Gibson",
     rating: 8.4,
     genre: Genres.ACTION,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703287/Braveheart_bo8upf.jpg",
   },
 
   {
@@ -307,6 +315,8 @@ const Movies = [
     director: "Edward Zwick",
     rating: 7.8,
     genre: Genres.WAR,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703288/Glory_xsjtz0.jpg",
   },
 
   {
@@ -318,6 +328,8 @@ const Movies = [
     director: "Robert Zemeckis",
     rating: 8.5,
     genre: Genres.SCI_FI,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703287/Back_to_the_Future_ijarlk.jpg",
   },
 
   {
@@ -329,6 +341,8 @@ const Movies = [
     director: "Martin Scorsese",
     rating: 8.7,
     genre: Genres.CRIME,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703288/Goodfellas_vpy50n.jpg",
   },
 
   {
@@ -340,6 +354,8 @@ const Movies = [
     director: "Martin Scorsese",
     rating: 8.5,
     genre: Genres.CRIME,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703287/The_Departed_bxf7zu.jpg",
   },
 
   {
@@ -351,6 +367,8 @@ const Movies = [
     director: "Damien Chazelle",
     rating: 8.5,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703287/Whiplash_psxum4.jpg",
   },
 
   {
@@ -362,6 +380,8 @@ const Movies = [
     director: "David Fincher",
     rating: 7.8,
     genre: Genres.DRAMA,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729703288/The_Social_Network_ihxhaq.jpg",
   },
 
   // Fictional unreleased movies
