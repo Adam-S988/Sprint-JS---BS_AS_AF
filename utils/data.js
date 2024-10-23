@@ -154,7 +154,7 @@ const Movies = [
     title: "Interstellar",
     releaseYear: 2014,
     description:
-      "A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.",
+      "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
     director: "Christopher Nolan",
     rating: 8.6,
     genre: Genres.SCI_FI,
