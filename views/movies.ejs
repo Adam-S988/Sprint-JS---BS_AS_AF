@@ -1,12 +1,30 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Movies</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title><%= movie.title %></title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
   </head>
   <body>
     <%- include('header') %>
     <main class="main-content">
-      <h1>Movies</h1>
+      <h1><%= movie.title %> (<%= movie.releaseYear %>)</h1>
+      <img
+        src="<%= movie.thumbnail %>"
+        alt="<%= movie.title %> Poster"
+        height="900px"
+        width="650px"
+      />
+      <% if (movie.extendedInfo) { %>
+      <p>
+        <strong>Description:</strong> <%= movie.extendedInfo.longDescription %>
+      </p>
+      <p>
+        <strong>Starring:</strong> <%= movie.extendedInfo.starring.join(', ') %>
+      </p>
+      <% } else { %>
+      <p><%= movie.description %></p>
+      <% } %>
+      <p>Rating: <%= movie.rating %> / 10</p>
     </main>
   </body>
 </html>

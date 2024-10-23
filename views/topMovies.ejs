@@ -7,6 +7,21 @@
     <%- include('header') %>
     <main class="main-content">
       <h1>Top Movies</h1>
+      <div class="outerMovieBox">
+        <% movies.forEach(movie => { %>
+        <div class="movieCard">
+          <h2><%= movie.title %> (<%= movie.releaseYear %>)</h2>
+          <img
+            src="<%= movie.thumbnail %>"
+            alt="<%= movie.title %> Poster"
+            height="400px"
+            width="300px"
+          />
+          <p><%= movie.description %></p>
+          <p>Rating: <%= movie.rating %> / 10</p>
+        </div>
+        <% }) %>
+      </div>
     </main>
   </body>
 </html>

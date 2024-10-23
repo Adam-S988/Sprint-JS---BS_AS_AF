@@ -7,6 +7,7 @@ const {
   selectRandomMovieId,
 } = require("./utils/movieUtils");
 const { Movies } = require("./utils/data");
+const { getRandomMovies } = require("./utils/movieUtils");
 
 const app = express();
 
@@ -16,12 +17,13 @@ app.use(express.static("public"));
 
 // Route to render the index page
 app.get("/", (req, res) => {
-  res.render("index"); // Render the index.ejs file
+  const randomMovies = getRandomMovies(9);
+  res.render("index", { movies: randomMovies }); // Render the index.ejs file
 });
 
 // Route to render movie details
 app.get("/movie/:id", (req, res) => {
-  const movieId = req.params.id;
+  const movieId = Number(req.params.id);
   const movie = getMovieDetailsById(movieId);
   if (movie) {
     res.render("movies", { movie: movie });
@@ -38,14 +40,37 @@ app.get("/top-rated", (req, res) => {
 
 // Route for upcoming movies (fictional movies are parsed out through the null filter.)
 app.get("/upcoming-movies", (req, res) => {
-  const upcomingMovie = Movies.filter((movie) => movie.rating === null);
-  res.render("upcomingMovies", { movies: upcomingMovie });
+  const upcomingMovies = Movies.filter((movie) => movie.rating === null);
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+  const randomUpcomingMovies = shuffleArray(upcomingMovies).slice(0, 5);
+
+  res.render("upcomingMovies", { movies: randomUpcomingMovies });
 });
 
 // Route for random movie
 app.get("/random-movie", (req, res) => {
   const randomMovieId = selectRandomMovieId();
   res.redirect(`/movie/${randomMovieId}`);
+});
+
+// generate new movie button
+app.get("/generate-random-movies", (req, res) => {
+  const randomMovies = getRandomMovies(9);
+  res.render("index", { movies: randomMovies });
+});
+
+// generate fictional movies button
+app.get("/generate-fictional-movies", (req, res) => {
+  const upcomingMovies = Movies.filter((movie) => movie.rating === null);
+  const shuffledUpcomingMovies = upcomingMovies.sort(() => 0.5 - Math.random());
+  const limitedUpcomingMovies = shuffledUpcomingMovies.slice(0, 9);
+  res.render("index", { movies: limitedUpcomingMovies });
 });
 
 const port = 3000;

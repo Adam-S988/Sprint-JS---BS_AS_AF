@@ -51,3 +51,23 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+
+.outerMovieBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.movieCard {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center; /* consider box shadow so movies like Forrest gump with a light background don't blend in. BS OCT 21*/
+  color: black;
+}
+
+.movieCard img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

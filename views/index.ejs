@@ -8,34 +8,33 @@
     <%- include('header') %>
     <main class="main-content">
       <h1>Welcome to the Movie Gallery</h1>
-      <div class="outerMovieBox">
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-        <div class="movieCard"></div>
-      </div>
-
       <div class="releasedMovieButton">
-        <button>
-          <label for="releasedMovie">Generate more movies!</label>
-          <!-- Will regenerate main movie box to display 9 new movies-->
-        </button>
+        <a href="/generate-random-movies">
+          <button>Generate More Movies!</button>
+        </a>
       </div>
-
-      <div class="fictionalMovieButton">
-        <button>
-          <label for="fictionalMovie">Generate fictional movies!</label>
-          <!-- Will generate 9 fictional movies. (Anything with null rating qualifies as fictional movie)
-          
-          NOTE: FICTIONAL MOVIE MEANS NOT A REAL MOVIE IN REAL LIFE. NOT FICTIONAL AS IN GENRE.
-          
-          -->
-        </button>
+      <div class="buttonContainer">
+        <div class="fictionalMovieButton">
+          <a href="/generate-fictional-movies">
+            <button>Generate Fictional Movies!</button>
+            <!-- Make new function for this. BS OCT 21-->
+          </a>
+        </div>
+      </div>
+      <div class="outerMovieBox">
+        <% movies.forEach(movie => { %>
+        <div class="movieCard">
+          <h2><%= movie.title %> (<%= movie.releaseYear %>)</h2>
+          <img
+            src="<%= movie.thumbnail %>"
+            alt="<%= movie.title %> Poster"
+            height="400px"
+            width="300px"
+          />
+          <p><%= movie.description %></p>
+          <p>Rating: <%= movie.rating %> / 10</p>
+        </div>
+        <% }) %>
       </div>
     </main>
   </body>
