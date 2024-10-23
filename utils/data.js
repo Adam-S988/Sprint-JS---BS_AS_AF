@@ -254,6 +254,116 @@ const Movies = [
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729550955/Jurassic_Park_jwho4b.jpg",
   },
 
+  {
+    id: 21,
+    title: "The Silence of the Lambs", // IT PUTS THE LOTION ON ITS SKIN
+    releaseYear: 1991,
+    description:
+      "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer.",
+    director: "Jonathan Demme",
+    rating: 8.6,
+    genre: Genres.THRILLER,
+  },
+
+  {
+    id: 22,
+    title: "The Green Mile", // WE EACH OWE A DEATH
+    releaseYear: 1999,
+    description:
+      "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+    director: "Frank Darabont",
+    rating: 8.6,
+    genre: Genres.DRAMA,
+  },
+
+  {
+    id: 23,
+    title: "The Prestige", // ARE YOU WATCHING CLOSELY?
+    releaseYear: 2006,
+    description:
+      "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+    director: "Christopher Nolan",
+    rating: 8.5,
+    genre: Genres.SCI_FI,
+  },
+
+  {
+    id: 24,
+    title: "Braveheart", // THEY MAY TAKE OUR LIVES, BUT THEY'LL NEVER TAKE OUR FREEDOM!
+    releaseYear: 1995,
+    description:
+      "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+    director: "Mel Gibson",
+    rating: 8.4,
+    genre: Genres.ACTION,
+  },
+
+  {
+    id: 25,
+    title: "Glory", // GIVE 'EM HELL 54TH
+    releaseYear: 1989,
+    description:
+      "Robert Gould Shaw leads the U.S. Civil War's first all-black volunteer company, fighting prejudices from both his own Union Army and the Confederates.",
+    director: "Edward Zwick",
+    rating: 7.8,
+    genre: Genres.WAR,
+  },
+
+  {
+    id: 26,
+    title: "Back to the Future", // ROADS? WHERE WE'RE GOING, WE DON'T NEED ROADS
+    releaseYear: 1985,
+    description:
+      "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, eccentric scientist Doc Brown.",
+    director: "Robert Zemeckis",
+    rating: 8.5,
+    genre: Genres.SCI_FI,
+  },
+
+  {
+    id: 27,
+    title: "Goodfellas", // AS FAR BACK AS I CAN REMEMBER, I ALWAYS WANTED TO BE A GANGSTER
+    releaseYear: 1990,
+    description:
+      "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+    director: "Martin Scorsese",
+    rating: 8.7,
+    genre: Genres.CRIME,
+  },
+
+  {
+    id: 28,
+    title: "The Departed", // WHEN YOU DECIDE TO BE SOMETHING, YOU CAN BE IT
+    releaseYear: 2006,
+    description:
+      "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+    director: "Martin Scorsese",
+    rating: 8.5,
+    genre: Genres.CRIME,
+  },
+
+  {
+    id: 29,
+    title: "Whiplash", // WERE YOU RUSHING OR DRAGGING?
+    releaseYear: 2014,
+    description:
+      "A promising young drummer enrolls at a cutthroat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+    director: "Damien Chazelle",
+    rating: 8.5,
+    genre: Genres.DRAMA,
+  },
+
+  {
+    id: 30,
+    title: "The Social Network", // YOU DON’T GET TO 500 MILLION FRIENDS WITHOUT MAKING A FEW ENEMIES
+    releaseYear: 2010,
+    description:
+      "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
+    director: "David Fincher",
+    rating: 7.8,
+    genre: Genres.DRAMA,
+  },
+
   // Fictional unreleased movies
   {
     id: 21,
