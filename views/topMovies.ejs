@@ -9,7 +9,7 @@
       <h1>Top Movies</h1>
       <div class="outerMovieBox">
         <% movies.forEach(movie => { %>
-        <div class="movieCard">
+        <a href="/movie/<%= movie.id %>" class="movieCard">
           <h2><%= movie.title %> (<%= movie.releaseYear %>)</h2>
           <img
             src="<%= movie.thumbnail %>"
@@ -19,7 +19,7 @@
           />
           <p><%= movie.description %></p>
           <p>Rating: <%= movie.rating %> / 10</p>
-        </div>
+        </a>
         <% }) %>
       </div>
     </main>

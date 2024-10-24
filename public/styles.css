@@ -65,6 +65,15 @@ h1 {
   border-radius: 8px;
   text-align: center; /* consider box shadow so movies like Forrest gump with a light background don't blend in. BS OCT 21*/
   color: black;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
 }
 
 .movieCard img {
