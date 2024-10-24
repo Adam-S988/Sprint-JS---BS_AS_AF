@@ -68,7 +68,8 @@ const Movies = [
     id: 4,
     title: "Schindler's List",
     releaseYear: 1993,
-    description: // Whoever saves one life, saves the world entire 
+    // Whoever saves one life, saves the world entire
+    description:
       "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce.",
     director: "Steven Spielberg",
     rating: 9.0,
@@ -102,7 +103,8 @@ const Movies = [
     id: 6,
     title: "The Lord of the Rings: The Fellowship of the Ring",
     releaseYear: 2001,
-    description: // All we have to decide is what to do with the time that is given us
+    // All we have to decide is what to do with the time that is given us
+    description:
       "A meek Hobbit and eight companions set out on a journey to destroy a powerful ring.",
     director: "Peter Jackson",
     rating: 8.8,
@@ -353,7 +355,7 @@ const Movies = [
       starring: ["Sam Neill", "Laura Dern", "Jeff Goldblum"],
     },
   },
-  // (Movies 21-30 with extended info here)
+
   {
     id: 21,
     title: "The Silence of the Lambs",
