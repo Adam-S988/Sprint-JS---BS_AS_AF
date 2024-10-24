@@ -34,20 +34,22 @@ describe("Movie Utility Functions", () => {
     });
   });
 
-  // describe('getTopRatedMovies', () => {
-  //     test('Should return the correct number of top rated movies', () => {
-  //         // const numberOfMovies = 10;
-  //         // const topRatedMovies = getTopRatedMovies(numberOfMovies);
-  //         // expect(topRatedMovies.length).toBeLessThanOrEqual(numberOfMovies);
-  //     });
+  describe("getTopRatedMovies", () => {
+    test("Should return the correct number of top rated movies", () => {
+      const numberOfMovies = 15;
+      const topRatedMovies = getTopRatedMovies(numberOfMovies);
+      expect(topRatedMovies.length).toBeLessThanOrEqual(numberOfMovies);
+    });
 
-  // test('Should return movies sorted by rating in descending order', () => {
-  //     const topRatedMovies = getTopRatedMovies(5);
-  //     for (let i = 0; i < topRatedMovies.length - 1; i++) {
-  //         expect (topRatedMovies[i].rating).toBeGreaterThanOrEqual(topRatedMovies[i + 1].rating);
-  //     }
-  // });
-  // });
+    test("Should return movies sorted by rating in descending order", () => {
+      const topRatedMovies = getTopRatedMovies(5);
+      for (let i = 0; i < topRatedMovies.length - 1; i++) {
+        expect(topRatedMovies[i].rating).toBeGreaterThanOrEqual(
+          topRatedMovies[i + 1].rating
+        );
+      }
+    });
+  });
 
   describe("getMovieDetailsById", () => {
     test("Should return the correct movie for the ID given", () => {
