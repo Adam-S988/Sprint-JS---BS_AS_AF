@@ -67,9 +67,9 @@ app.get("/random-movie", (req, res) => {
 
 // Route for movies by genre
 app.get("/genre", (req,res) => {
-  app.get("/genres", (req, res) => {
-    res.render("genres");
-  })
+  const { genre, limit = 10} = req.query;
+  const moviesByGenre = getMoviesByGenre(genre, Number(limit));
+  res.render("moviesByGenre", {movies : moviesByGenre, genre});
 });
 
 // generate new movie button
