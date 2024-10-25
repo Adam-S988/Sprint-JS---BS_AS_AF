@@ -55,10 +55,13 @@ function getMovieDetailsById(id) {
  */
 function selectRandomMovieId() {
   // Generate a random index between 0 and the last index of the Movies array using Math.Random
+
+  //Filter out movies with null ratings
+  const ratedMovies = Movies.filter((movie) => movie.rating !== null);
   // Use Math.floor to round to nearest whole number returning a valid index number
-  const randomIndex = Math.floor(Math.random() * Movies.length);
+  const randomIndex = Math.floor(Math.random() * ratedMovies.length);
   // Return the ID of the movie that was randomly selected
-  return Movies[randomIndex].id;
+  return ratedMovies[randomIndex].id;
 }
 
 // get 9 random movies
