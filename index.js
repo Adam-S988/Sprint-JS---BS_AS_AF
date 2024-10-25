@@ -22,14 +22,20 @@ app.get("/", (req, res) => {
 });
 
 // Route to render movie details
-app.get("/movie/:id", (req, res) => {
-  const movieId = Number(req.params.id);
-  const movie = getMovieDetailsById(movieId);
+// Use async-await to handle requests 
+app.get("/movie/:id", async (req, res) => {
+  try {
+    const movieId = Number(req.params.id);
+  const movie = await getMovieDetailsById(movieId);
   if (movie) {
     res.render("movies", { movie: movie });
   } else {
     res.status(404).send("Movie not found!");
   }
+// Catch error if server is not rendering with error message
+} catch (error) {
+  res.status(500).send("Internal Server Error");
+}
 });
 
 // Route to render top rated movies
