@@ -35,6 +35,21 @@
       <% } %>
       <p>Rating: <%= movie.rating %> / 10</p>
 
+      <!-- Add with a limit of 4 movies with the same rating -->
+      <% if (similarMovies && similarMovies.length > 0) { %>
+        <h3>Movies you may enjoy based on this selection: </h3>
+        <ul>
+          <% similarMovies.forEach(similarMovie => { %>
+            <li>
+              <a href="/movie/<%= similarMovie.id %>">
+                <%= similarMovie.title %> (<%= similarMovie.releaseYear %>)
+              </a>
+            </li>
+        <%  }) %>
+      </ul>
+    <%  } else { %>
+      <p>No similar movies found, try another random movie.</p>
+  <%  } %>
     </main>
   </body>
 </html>
