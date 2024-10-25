@@ -65,6 +65,12 @@ app.get("/random-movie", (req, res) => {
   res.redirect(`/movie/${randomMovieId}`);
 });
 
+// Route for movies by genre
+app.get("/genre", (req,res) => {
+  const moviesByGenre = getMoviesByGenre();
+  res.redirect("moviesByGenre", {movies : moviesByGenre, genre})
+})
+
 // generate new movie button
 app.get("/generate-random-movies", (req, res) => {
   const randomMovies = getRandomMovies(9);
@@ -78,6 +84,7 @@ app.get("/generate-fictional-movies", (req, res) => {
   const limitedUpcomingMovies = shuffledUpcomingMovies.slice(0, 9);
   res.render("index", { movies: limitedUpcomingMovies });
 });
+
 
 const port = 3000;
 app.listen(port, () => {
