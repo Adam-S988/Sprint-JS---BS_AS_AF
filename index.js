@@ -5,6 +5,7 @@ const {
   getMoviesByGenre,
   getMovieDetailsById,
   selectRandomMovieId,
+  getSimilarMovies,
 } = require("./utils/movieUtils");
 const { Movies } = require("./utils/data");
 const { getRandomMovies } = require("./utils/movieUtils");
@@ -23,19 +24,16 @@ app.get("/", (req, res) => {
 
 // Route to render movie details
 // Use async-await to handle requests 
-app.get("/movie/:id", async (req, res) => {
-  try {
-    const movieId = Number(req.params.id);
-  const movie = await getMovieDetailsById(movieId);
-  if (movie) {
-    res.render("movies", { movie: movie });
-  } else {
-    res.status(404).send("Movie not found!");
-  }
-// Catch error if server is not rendering with error message
-} catch (error) {
-  res.status(500).send("Internal Server Error");
-}
+app.get("/movie/:id", (req, res) => {
+  const movieId = Number(req.params.id);
+
+  const movie = getMovieDetailsById(movieId);
+
+  const similarMovies = Movies.filter(
+    (m) => m.genre === movie.genre && m.id !== movie.id
+  ).slice(0,4);
+
+  res.render("movies", {movie: movie, similarMovies: similarMovies});
 });
 
 // Route to render top rated movies
@@ -59,10 +57,31 @@ app.get("/upcoming-movies", (req, res) => {
   res.render("upcomingMovies", { movies: randomUpcomingMovies });
 });
 
+/**
+ * Select a random movie ID and find similar movies
+ * @param {number} limit - max number of similar movies to return
+ * @returns {Object} - return object containing random movie and similar
+ */
 // Route for random movie
 app.get("/random-movie", (req, res) => {
-  const randomMovieId = selectRandomMovieId();
-  res.redirect(`/movie/${randomMovieId}`);
+  try {
+    const result = selectRandomMovieId(4); // get random movie id and up to 4 similar movies
+
+    // check if valid 
+    if (!result || !result.randomMovieId) {
+      console.error("No random movie could be selected.");
+      return res.status(404).send("No movie found.");
+    }
+    // extract random movie id and similar movies
+    const { randomMovieId, similarMovies } = result;
+    const movie = getMovieDetailsById(randomMovieId);
+
+    // redirect to the movie's details page and pass the similar movies
+    res.render("movies", { movie: movie, similarMovies: similarMovies });
+  } catch (error) {
+    console.error("Error generating random movie:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 // Route for movies by genre
