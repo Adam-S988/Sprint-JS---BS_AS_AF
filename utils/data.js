@@ -696,7 +696,7 @@ const Movies = [
       "A group of local college teens head to a spring resort and stumble upon an unresolved crime scene.",
     director: "Quentin Tarantino",
     rating: null,
-    genre: Genres.DRAMA,
+    genre: Genres.ROMANCE,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
@@ -721,7 +721,7 @@ const Movies = [
       "Resurrected a 100 years after his untimely death, Zachary Wheeler has to find his place in the new world.",
     director: "Bill Hader",
     rating: null,
-    genre: Genres.DRAMA,
+    genre: Genres.FANTASY,
     thumbnail:
       "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
   },
@@ -769,6 +769,29 @@ const Movies = [
     releaseYear: 2025,
     description: "A direct sequel to the 2024 smash hit Nosferatu.",
     director: "Robert Eggers",
+    rating: null,
+    genre: Genres.HORROR,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+  },
+
+  {
+    id: 51,
+    title: "Bad Romance",
+    releaseYear: 2026,
+    description: "Great song",
+    director: "Lady Gaga",
+    rating: null,
+    genre: Genres.ROMANCE,
+    thumbnail:
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+  },
+  {
+    id: 52,
+    title: "Midsommar Part 2",
+    releaseYear: 2028,
+    description: "Picking up directly after the events of Midsommar",
+    director: "Ari Aster",
     rating: null,
     genre: Genres.HORROR,
     thumbnail:
