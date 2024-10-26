@@ -31,7 +31,7 @@ app.get("/movie/:id", (req, res) => {
 
   const similarMovies = Movies.filter(
     (m) => m.genre === movie.genre && m.id !== movie.id
-  ).slice(0,4);
+  ).slice(0,3);
 
   res.render("movies", {movie: movie, similarMovies: similarMovies});
 });
@@ -65,7 +65,7 @@ app.get("/upcoming-movies", (req, res) => {
 // Route for random movie
 app.get("/random-movie", (req, res) => {
   try {
-    const result = selectRandomMovieId(4); // get random movie id and up to 4 similar movies
+    const result = selectRandomMovieId(3); // get random movie id and up to 3 similar movies
 
     // check if valid 
     if (!result || !result.randomMovieId) {

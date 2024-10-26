@@ -54,7 +54,7 @@ function getMovieDetailsById(id) {
  * @param {number} limit - max number of similar movies to return
  * @returns {Object} - return object containing random movie and similar movies
  */
-function selectRandomMovieId(limit = 4) {
+function selectRandomMovieId(limit = 3) {
   // Generate a random index between 0 and the last index of the Movies array using Math.Random
 
   //Filter out movies with null ratings
@@ -64,14 +64,23 @@ function selectRandomMovieId(limit = 4) {
   const randomMovie = ratedMovies[randomIndex];
 
   // Find movies with the same genre while excluding selected movie
-  const similarMovies = Movies.filter(
-    (movie) => movie.genre === randomMovie.genre && movie.id !== randomMovie.id
-  ).slice(0,limit);
+  let similarMovies = Movies.filter(
+    (movie) => movie.genre.includes(randomMovie.genre) && movie.id !== randomMovie.id
+  );
+
+  // shuffle similarMovies array to get random each time
+  for (let i = similarMovies.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [similarMovies[i], similarMovies[j]] = [similarMovies[j], similarMovies[i]];
+  }
+
+  // limit the results to the specifies number
+  const limitedSimilarMovies = similarMovies.slice(0, limit);
 
   // Return the random movie and array of similar movies
   return {
     randomMovieId : randomMovie.id,
-    similarMovies : similarMovies,
+    similarMovies : limitedSimilarMovies,
   };
   
 }
