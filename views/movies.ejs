@@ -14,42 +14,56 @@
         height="900px"
         width="650px"
       />
+
       <% if (movie.extendedInfo) { %>
-      <p>
-        <strong>Description:</strong> <%= movie.extendedInfo.longDescription %>
-      </p>
-      <p>
-        <strong>Starring:</strong> <%= movie.extendedInfo.starring.join(', ') %>
-      </p>
-      <p>
-        <strong>Directed By:</strong> <%= movie.director %>
-      </p> 
-      <p>
-        <strong>Release Year:</strong> <%= movie.releaseYear %>
-      </p>
-      <p>
-        <strong>Genre:</strong> <%= movie.genre %>
-      </p>
+      <table class="movie-info-table">
+        <tr>
+          <th>Description</th>
+          <td><%= movie.extendedInfo.longDescription %></td>
+        </tr>
+        <tr>
+          <th>Starring</th>
+          <td><%= movie.extendedInfo.starring.join(', ') %></td>
+        </tr>
+        <tr>
+          <th>Directed By</th>
+          <td><%= movie.director %></td>
+        </tr>
+        <tr>
+          <th>Release Year</th>
+          <td><%= movie.releaseYear %></td>
+        </tr>
+        <tr>
+          <th>Genre</th>
+          <td><%= movie.genre %></td>
+        </tr>
+      </table>
       <% } else { %>
       <p><%= movie.description %></p>
       <% } %>
       <p>Rating: <%= movie.rating %> / 10</p>
 
-      <!-- Add with a limit of 4 movies with the same rating -->
       <% if (similarMovies && similarMovies.length > 0) { %>
-        <h3>Movies you may enjoy based on this selection: </h3>
-        <ul>
-          <% similarMovies.forEach(similarMovie => { %>
-            <li>
-              <a href="/movie/<%= similarMovie.id %>">
-                <%= similarMovie.title %> (<%= similarMovie.releaseYear %>)
-              </a>
-            </li>
-        <%  }) %>
+      <h3>Movies you may enjoy based on this selection:</h3>
+      <ul class="similar">
+        <% similarMovies.forEach(similarMovie => { %>
+        <li>
+          <a href="/movie/<%= similarMovie.id %>">
+            <img
+              src="<%= similarMovie.thumbnail %>"
+              alt="<%= similarMovie.title %> Poster"
+              height="150"
+              width="105"
+              style="margin-right: 10px; vertical-align: middle"
+            />
+            <%= similarMovie.title %> (<%= similarMovie.releaseYear %>)
+          </a>
+        </li>
+        <% }) %>
       </ul>
-    <%  } else { %>
+      <% } else { %>
       <p>No similar movies found, try another random movie.</p>
-  <%  } %>
+      <% } %>
     </main>
   </body>
 </html>

@@ -15,7 +15,11 @@ body {
 
 header {
   background-color: #333;
+  width: 100%;
+  /* margin-bottom: 50px; */
   padding: 20px 0;
+  position: fixed;
+  z-index: 10;
 }
 
 nav {
@@ -49,7 +53,7 @@ nav ul li a:hover {
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .outerMovieBox {
@@ -79,4 +83,35 @@ h1 {
 .movieCard img {
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.movie-info-table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.movie-info-table th,
+.movie-info-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.movie-info-table th {
+  background-color: #333;
+  color: white;
+}
+
+.movie-info-table tr {
+  background-color: rgba(201, 201, 201, 0.5);
+  text-align: center;
+}
+
+.movie-info-table tr:hover {
+  background-color: hsl(0, 0%, 55%);
+}
+
+.similar {
+  list-style-type: none;
 }
