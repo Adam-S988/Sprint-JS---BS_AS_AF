@@ -41,6 +41,7 @@
       <% } else { %>
       <p><%= movie.description %></p>
       <% } %>
+
       <p>Rating: <%= movie.rating %> / 10</p>
 
       <% if (similarMovies && similarMovies.length > 0) { %>
@@ -48,20 +49,23 @@
       <ul class="similar">
         <% similarMovies.forEach(similarMovie => { %>
         <li>
-          <a href="/movie/<%= similarMovie.id %>">
+          <a href="/movie/<%= similarMovie.id %>" class="similar-movie">
             <img
               src="<%= similarMovie.thumbnail %>"
               alt="<%= similarMovie.title %> Poster"
               height="150"
               width="105"
-              style="margin-right: 10px; vertical-align: middle"
             />
-            <%= similarMovie.title %> (<%= similarMovie.releaseYear %>)
+            <span class="similar-movie-title">
+              <%= similarMovie.title %> (<%= similarMovie.releaseYear %>)
+            </span>
           </a>
         </li>
         <% }) %>
       </ul>
+
       <% } else { %>
+      <!-- Correct placement of else -->
       <p>No similar movies found, try another random movie.</p>
       <% } %>
     </main>
