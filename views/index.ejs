@@ -8,19 +8,15 @@
     <%- include('header') %>
     <main class="main-content">
       <h1>Welcome to the Movie Gallery</h1>
+      <div class = "button-container">
       <div class="releasedMovieButton">
         <a href="/generate-random-movies">
-          <button>Generate More Movies!</button>
+          <button>Generate More Movies</button>
         </a>
       </div>
-      <div class="buttonContainer">
-        <div class="fictionalMovieButton">
-          <a href="/generate-fictional-movies">
-            <button>Generate Upcoming Movies!</button>
-            <!-- Make new function for this. BS OCT 21-->
-          </a>
-        </div>
-        <a href="/genre"><button>Select Movies By Genre!</button></a>
+      <div>
+        <a href="/genre"><button>Select Movies By Genre</button></a>
+      </div>
       </div>
       <div class="outerMovieBox">
         <% movies.forEach(movie => { %>
