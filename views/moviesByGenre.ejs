@@ -30,10 +30,13 @@
   
   <% if (typeof movies !== 'undefined' && movies.length > 0) { %>
     <h2>Movies in Genre: <%= genre %></h2>
-    <ul>
+    <ul class="movie-list">
       <% movies.forEach(movie => { %>
-        <li>
-          <a href="/movie/<%= movie.id %>"><%= movie.title %> (<%= movie.releaseYear %>)</a>
+        <li class="movie-item">
+          <a href="/movie/<%= movie.id %>">
+            <img src="<%= movie.thumbnail %>" alt="<%= movie.title %> Poster" class="movie-thumbnail" />
+            <span class="movie-title"><%= movie.title %> (<%= movie.releaseYear %>)</span>
+          </a>
         </li>
       <% }) %>
     </ul>

@@ -230,3 +230,51 @@ form button[type="submit"]:hover {
 .button-container a button:hover {
   background-color: #0056b3;
 }
+
+/* Container for the movie list */
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+/* Individual movie item styling */
+.movie-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.movie-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  gap: 25px; 
+}
+
+/* Movie thumbnail styling */
+.movie-thumbnail {
+  width: 120px; 
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Title styling */
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover effect for the image */
+.movie-item:hover .movie-thumbnail {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
