@@ -538,7 +538,7 @@ const Movies = [
     rating: null,
     genre: Genres.SCI_FI,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/lunar_colony_goy1sw.webp",
   },
   {
     id: 32,
@@ -550,7 +550,7 @@ const Movies = [
     rating: null,
     genre: Genres.THRILLER,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
   {
     id: 33,
@@ -562,7 +562,7 @@ const Movies = [
     rating: null,
     genre: Genres.SCI_FI,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
   {
     id: 34,
@@ -574,7 +574,7 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/quantum_paradox_bqr2mx.webp",
   },
   {
     id: 35,
@@ -586,7 +586,7 @@ const Movies = [
     rating: null,
     genre: Genres.ADVENTURE,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/the_forgotten_island_g37wox.webp",
   },
   {
     id: 36,
@@ -598,7 +598,7 @@ const Movies = [
     rating: null,
     genre: Genres.CRIME,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/nightfall_city_hpftov.webp",
   },
   {
     id: 37,
@@ -647,7 +647,7 @@ const Movies = [
     rating: null,
     genre: Genres.SCI_FI,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -660,7 +660,7 @@ const Movies = [
     rating: null,
     genre: Genres.FANTASY,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -672,7 +672,7 @@ const Movies = [
     rating: null,
     genre: Genres.FANTASY,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -685,20 +685,19 @@ const Movies = [
     rating: null,
     genre: Genres.SCI_FI,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
     id: 44,
-    title: "Spring",
-    releaseYear: 2027,
+    title: "Gyver and Pickles; A Halloween Haunting",
+    releaseYear: 2025,
     description:
-      "A group of local college teens head to a spring resort and stumble upon an unresolved crime scene.",
-    director: "Quentin Tarantino",
+      "Two mischievous ghost pets team up to save their haunted town from a mysterious, power hungry pumpkin.",
     rating: null,
-    genre: Genres.ROMANCE,
+    genre: Genres.ANIMATION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048054/movie_poster_halloween_fggegl.webp",
   },
 
   {
@@ -710,7 +709,7 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -723,7 +722,7 @@ const Movies = [
     rating: null,
     genre: Genres.FANTASY,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -736,19 +735,20 @@ const Movies = [
     rating: null,
     genre: Genres.ANIMATION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
     id: 48,
-    title: "Dear to my Heart 2",
+    title: "The Curse of Obie 2",
     releaseYear: 2027,
-    description: "Description not yet available.",
+    description:
+      "A group of young friends stumble upon a haunted arcade game that traps them inside a game world as pets.",
     director: "John Lasseter",
     rating: null,
     genre: Genres.ANIMATION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/movie_poster_curse_of_obie_tsldqc.webp",
   },
 
   {
@@ -760,7 +760,7 @@ const Movies = [
     rating: null,
     genre: Genres.HORROR,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485377/american_nightmarewebp_dih2bb.webp",
   },
 
   {
@@ -772,7 +772,7 @@ const Movies = [
     rating: null,
     genre: Genres.HORROR,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 
   {
@@ -784,7 +784,7 @@ const Movies = [
     rating: null,
     genre: Genres.ROMANCE,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
   {
     id: 52,
@@ -795,7 +795,7 @@ const Movies = [
     rating: null,
     genre: Genres.HORROR,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730485611/coming_soon_ckd6dz.jpg",
   },
 ];
 
