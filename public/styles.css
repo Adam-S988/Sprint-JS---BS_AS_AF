@@ -83,6 +83,7 @@ nav ul li a:hover {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-right: 370px;
 }
 
 .nav-links ul li {
@@ -297,7 +298,7 @@ form button[type="submit"]:hover {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #fbfbfb;
   gap: 25px;
 }
 
@@ -313,7 +314,7 @@ form button[type="submit"]:hover {
 .movie-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #f0f0f0;
 }
 
 /* Hover effect for the image */
