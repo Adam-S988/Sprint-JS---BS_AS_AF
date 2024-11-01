@@ -18,10 +18,12 @@ function getMoviesByGenre(genre, x) {
  * @param {number} x - The number of top-rated movies to retrieve
  * @returns {Array.<Movies>} - An array of top-rated movies
  */
-function getTopRatedMovies(x = 9) {
+function getTopRatedMovies(x = 15) {
   // Sort Movies in descending order by rating by comparing two movies at a time in array
-  const sortedMovies = Movies.sort((movie1, movie2) => movie2.rating - movie1.rating);
-  return sortedMovies.slice(0,x);
+  const sortedMovies = Movies.sort(
+    (movie1, movie2) => movie2.rating - movie1.rating
+  );
+  return sortedMovies.slice(0, x);
 }
 /**
  * Get the details of a movie by its ID
@@ -58,7 +60,8 @@ function selectRandomMovieId(limit = 3) {
 
   // Find movies with the same genre while excluding selected movie
   let similarMovies = Movies.filter(
-    (movie) => movie.genre.includes(randomMovie.genre) && movie.id !== randomMovie.id
+    (movie) =>
+      movie.genre.includes(randomMovie.genre) && movie.id !== randomMovie.id
   );
 
   // shuffle similarMovies array to get random each time
@@ -72,10 +75,9 @@ function selectRandomMovieId(limit = 3) {
 
   // Return the random movie and array of similar movies
   return {
-    randomMovieId : randomMovie.id,
-    similarMovies : limitedSimilarMovies,
+    randomMovieId: randomMovie.id,
+    similarMovies: limitedSimilarMovies,
   };
-  
 }
 
 // get 9 random movies
@@ -94,8 +96,6 @@ function getUnreleasedMovies(num = 5) {
   return shuffledMovies.slice(0, num);
 }
 
-
-
 // Export the functions to be used in other modules
 module.exports = {
   getMoviesByGenre,
@@ -103,5 +103,5 @@ module.exports = {
   getMovieDetailsById,
   selectRandomMovieId,
   getRandomMovies,
-  getUnreleasedMovies
+  getUnreleasedMovies,
 };
