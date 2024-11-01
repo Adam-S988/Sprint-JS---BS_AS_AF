@@ -610,7 +610,7 @@ const Movies = [
     rating: null,
     genre: Genres.SCI_FI,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/lunar_colony_goy1sw.webp",
   },
   {
     id: 38,
@@ -622,7 +622,7 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/codebreaker_fvrnce.webp",
   },
   {
     id: 39,
@@ -634,7 +634,7 @@ const Movies = [
     rating: null,
     genre: Genres.ACTION,
     thumbnail:
-      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1729635733/emptyThumbnail_wxpxqe.png",
+      "https://res.cloudinary.com/dre1ubhqk/image/upload/v1730048053/codebreaker_fvrnce.webp",
   },
 
   {
