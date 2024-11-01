@@ -200,7 +200,7 @@ form {
   align-items: center;
   gap: 10px;
   padding: 20px;
-  background-color: rgba(249, 249, 249, 0.8);
+  background-color: #777777b2;
   border-radius: 8px;
   width: 300px;
   margin: 60px auto;
@@ -211,7 +211,7 @@ form {
 form label {
   font-size: 20px;
   font-weight: 600;
-  color: #333;
+  color: #fbfbfb;
 }
 
 form select {
@@ -234,7 +234,9 @@ form button[type="submit"] {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #333;
+  border: 1px solid #333;
+  transition: border 0.1s ease-in-out;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -242,7 +244,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-  background-color: #0056b3;
+  border: 1px solid goldenrod;
 }
 
 /* Additional styling for responsiveness */
@@ -322,3 +324,4 @@ form button[type="submit"]:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
