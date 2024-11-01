@@ -115,3 +115,64 @@ h1 {
 .similar {
   list-style-type: none;
 }
+
+/* Form container styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(249, 249, 249, 0.8); /* Set background color with transparency */
+  border-radius: 8px;
+  width: 300px;
+  margin: 60px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+form label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Dropdown (select) styling */
+form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
+

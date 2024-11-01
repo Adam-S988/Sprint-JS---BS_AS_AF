@@ -38,7 +38,7 @@ app.get("/movie/:id", (req, res) => {
 
 // Route to render top rated movies
 app.get("/top-rated", (req, res) => {
-  const topMovies = getTopRatedMovies(15);
+  const topMovies = getTopRatedMovies(9);
   res.render("topMovies", { movies: topMovies });
 });
 

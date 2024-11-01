@@ -18,18 +18,11 @@ function getMoviesByGenre(genre, x) {
  * @param {number} x - The number of top-rated movies to retrieve
  * @returns {Array.<Movies>} - An array of top-rated movies
  */
-function getTopRatedMovies(x) {
+function getTopRatedMovies(x = 9) {
   // Sort Movies in descending order by rating by comparing two movies at a time in array
-  Movies.sort((movie1, movie2) => {
-    // Compare ratings and put the movie with higher rating before the other
-    return movie2.rating - movie1.rating;
-  });
-  // Get the top "x" movies from the sorted array
-  const topRatedMovies = Movies.slice(0, 15);
-  // Return array of the top-rated movies
-  return topRatedMovies;
+  const sortedMovies = Movies.sort((movie1, movie2) => movie2.rating - movie1.rating);
+  return sortedMovies.slice(0,x);
 }
-
 /**
  * Get the details of a movie by its ID
  * @param {number} id - The ID of the movie
