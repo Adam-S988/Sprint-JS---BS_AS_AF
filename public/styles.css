@@ -14,12 +14,32 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #333;
-  width: 100%;
-  /* margin-bottom: 50px; */
-  padding: 20px 0;
+  height: 70px; /* Set a fixed height for consistency */
+  padding: 0 20px; /* Horizontal padding only */
   position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 10;
+  box-sizing: border-box;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-left img {
+  height: 60px;
+  display: block;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -36,6 +56,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin: 0 20px;
+  padding-right: 30px;
 }
 
 nav ul li a {
@@ -48,8 +69,28 @@ nav ul li a:hover {
   color: goldenrod;
 }
 
+.logo-container {
+  margin-right: auto;
+}
+
+.logo-container img {
+  height: 60px;
+  display: block;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin: 0 10px;
+}
+
 .main-content {
-  padding: 20px;
+  padding-top: 60px;
 }
 
 h1 {
@@ -152,19 +193,13 @@ h1 {
   margin-left: 10px;
 }
 
-/* Form container styling */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 20px;
-  background-color: rgba(
-    249,
-    249,
-    249,
-    0.8
-  ); /* Set background color with transparency */
+  background-color: rgba(249, 249, 249, 0.8);
   border-radius: 8px;
   width: 300px;
   margin: 60px auto;
@@ -178,7 +213,6 @@ form label {
   color: #333;
 }
 
-/* Dropdown (select) styling */
 form select {
   padding: 10px;
   font-size: 16px;
