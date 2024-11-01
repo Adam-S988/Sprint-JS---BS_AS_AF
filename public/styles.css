@@ -131,14 +131,14 @@ h1 {
 }
 
 .movie-info-table {
-  width: 60%;
+  width: 650px;
   border-collapse: collapse;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .movie-info-table th,
 .movie-info-table td {
-  padding: 10px;
+  padding: 30px;
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -149,12 +149,12 @@ h1 {
 }
 
 .movie-info-table tr {
-  background-color: rgba(201, 201, 201, 0.5);
+  background-color: rgba(132, 132, 132, 0.8);
   text-align: center;
 }
 
 .movie-info-table tr:hover {
-  background-color: hsl(0, 0%, 55%);
+  background-color: hsl(0, 0%, 35%);
 }
 
 .similar {
